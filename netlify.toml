@@ -1,0 +1,10 @@
+# Configuración para desplegar en Netlify conectando un repositorio Git.
+# (Si subes la carpeta dist por arrastrar-y-soltar, este archivo no se usa.)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

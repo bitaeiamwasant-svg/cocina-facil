@@ -1,0 +1,8 @@
+node_modules
+dist
+dev-dist
+*.local
+.DS_Store
+
+# Documentos privados (no publicar en un repo público)
+src/private/
