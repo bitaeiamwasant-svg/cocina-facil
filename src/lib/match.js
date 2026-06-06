@@ -53,7 +53,10 @@ const SINONIMOS = {
   // Verduras (variantes regionales de judía verde)
   ejote: 'judia',
   chaucha: 'judia',
-  vainita: 'judia'
+  vainita: 'judia',
+  // Postres / desayunos
+  yogurt: 'yogur',
+  yoghurt: 'yogur'
 }
 
 // Normaliza texto: minúsculas, sin acentos, sin plural simple y unifica sinónimos.
@@ -81,6 +84,7 @@ export function parseIngredientes(texto) {
 }
 
 // Devuelve las recetas ordenadas por cuántos ingredientes coinciden.
+// También admite buscar por categoría (p. ej. "postres", "desayunos").
 export function buscarRecetas(recetas, ingredientesUsuario) {
   const tengo = new Set(ingredientesUsuario)
 
@@ -90,8 +94,15 @@ export function buscarRecetas(recetas, ingredientesUsuario) {
       const disponibles = requeridos.filter((i) => tengo.has(i))
       const faltantes = requeridos.filter((i) => !tengo.has(i))
       const porcentaje = Math.round((disponibles.length / requeridos.length) * 100)
-      return { receta, disponibles, faltantes, porcentaje }
+      // ¿el usuario escribió el nombre de la categoría? (postre, desayuno...)
+      const categoriaMatch = receta.categoria ? tengo.has(normaliza(receta.categoria)) : false
+      return { receta, disponibles, faltantes, porcentaje, categoriaMatch }
     })
-    .filter((r) => r.disponibles.length > 0)
-    .sort((a, b) => b.porcentaje - a.porcentaje || a.faltantes.length - b.faltantes.length)
+    .filter((r) => r.disponibles.length > 0 || r.categoriaMatch)
+    .sort(
+      (a, b) =>
+        Number(b.categoriaMatch) - Number(a.categoriaMatch) ||
+        b.porcentaje - a.porcentaje ||
+        a.faltantes.length - b.faltantes.length
+    )
 }

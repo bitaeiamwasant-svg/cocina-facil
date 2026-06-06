@@ -70,6 +70,7 @@ export const recetas = [
     nombre: 'Huevos revueltos cremosos',
     tiempo: 10,
     dificultad: 'Fácil',
+    categoria: 'Desayuno',
     imagen: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=70',
     video: 'PUP7U5vTMM0',
     ingredientes: ['huevo', 'mantequilla', 'leche'],
@@ -160,6 +161,7 @@ export const recetas = [
     nombre: 'Panqueques caseros',
     tiempo: 15,
     dificultad: 'Fácil',
+    categoria: 'Desayuno',
     imagen: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=70',
     video: 'AQ0xUF2BBOM',
     ingredientes: ['harina', 'huevo', 'leche'],
@@ -265,6 +267,7 @@ export const recetas = [
     nombre: 'Avena con plátano',
     tiempo: 10,
     dificultad: 'Fácil',
+    categoria: 'Desayuno',
     imagen: 'https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=800&q=70',
     video: 'A2pZkb1G_RA',
     ingredientes: ['avena', 'leche', 'platano'],
@@ -735,6 +738,156 @@ export const recetas = [
       'Cuece las judías verdes en agua con sal hasta que estén tiernas.',
       'Dora el ajo laminado en aceite.',
       'Saltea las judías con el ajo 3-4 minutos.'
+    ]
+  },
+  {
+    id: 'platano-chocolate',
+    nombre: 'Plátano con chocolate',
+    tiempo: 8,
+    dificultad: 'Fácil',
+    categoria: 'Postre',
+    imagen: 'https://loremflickr.com/800/600/banana,chocolate,dessert?lock=45',
+    ingredientes: ['platano', 'chocolate'],
+    basicos: [],
+    pasos: [
+      'Corta el plátano en rodajas.',
+      'Derrite el chocolate al baño maría o en el microondas.',
+      'Baña el plátano con el chocolate y deja enfriar.'
+    ]
+  },
+  {
+    id: 'manzana-horno',
+    nombre: 'Manzana al horno',
+    tiempo: 35,
+    dificultad: 'Fácil',
+    categoria: 'Postre',
+    imagen: 'https://loremflickr.com/800/600/baked,apple,dessert?lock=46',
+    ingredientes: ['manzana'],
+    basicos: ['canela', 'azucar', 'miel'],
+    pasos: [
+      'Retira el centro de la manzana.',
+      'Rellena con azúcar, canela y un poco de miel.',
+      'Hornea a 180°C unos 25-30 minutos.'
+    ]
+  },
+  {
+    id: 'arroz-con-leche',
+    nombre: 'Arroz con leche',
+    tiempo: 35,
+    dificultad: 'Media',
+    categoria: 'Postre',
+    imagen: 'https://loremflickr.com/800/600/rice,pudding,dessert?lock=47',
+    ingredientes: ['arroz', 'leche'],
+    basicos: ['azucar', 'canela'],
+    pasos: [
+      'Cuece el arroz con la leche a fuego suave.',
+      'Añade azúcar y una rama de canela.',
+      'Remueve hasta que espese y deja enfriar.'
+    ]
+  },
+  {
+    id: 'mug-cake',
+    nombre: 'Mug cake de chocolate',
+    tiempo: 5,
+    dificultad: 'Fácil',
+    categoria: 'Postre',
+    imagen: 'https://loremflickr.com/800/600/chocolate,mug,cake,dessert?lock=48',
+    ingredientes: ['harina', 'huevo', 'leche', 'chocolate'],
+    basicos: ['azucar'],
+    pasos: [
+      'Mezcla en una taza la harina, el huevo, la leche, el chocolate y el azúcar.',
+      'Cocina en el microondas 1,5-2 minutos.',
+      'Deja templar un momento y disfruta.'
+    ]
+  },
+  {
+    id: 'fresas-yogur',
+    nombre: 'Fresas con yogur',
+    tiempo: 5,
+    dificultad: 'Fácil',
+    categoria: 'Postre',
+    imagen: 'https://loremflickr.com/800/600/strawberry,yogurt,dessert?lock=49',
+    ingredientes: ['fresa', 'yogur'],
+    basicos: ['miel'],
+    pasos: [
+      'Lava y corta las fresas.',
+      'Mézclalas con el yogur.',
+      'Endulza con un poco de miel.'
+    ]
+  },
+  {
+    id: 'tostadas-francesas',
+    nombre: 'Tostadas francesas',
+    tiempo: 12,
+    dificultad: 'Fácil',
+    categoria: 'Desayuno',
+    imagen: 'https://loremflickr.com/800/600/french,toast,breakfast?lock=50',
+    ingredientes: ['pan', 'huevo', 'leche'],
+    basicos: ['azucar', 'canela', 'mantequilla'],
+    pasos: [
+      'Bate el huevo con la leche, azúcar y canela.',
+      'Remoja las rebanadas de pan en la mezcla.',
+      'Dóralas en la sartén con mantequilla por ambos lados.'
+    ]
+  },
+  {
+    id: 'tostada-aguacate',
+    nombre: 'Tostada de aguacate',
+    tiempo: 7,
+    dificultad: 'Fácil',
+    categoria: 'Desayuno',
+    imagen: 'https://loremflickr.com/800/600/avocado,toast,breakfast?lock=51',
+    ingredientes: ['pan', 'aguacate', 'limon'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Tuesta el pan.',
+      'Machaca el aguacate con limón, sal y pimienta.',
+      'Úntalo sobre el pan y añade un hilo de aceite.'
+    ]
+  },
+  {
+    id: 'yogur-fruta-avena',
+    nombre: 'Yogur con fruta y avena',
+    tiempo: 5,
+    dificultad: 'Fácil',
+    categoria: 'Desayuno',
+    imagen: 'https://loremflickr.com/800/600/yogurt,fruit,granola,breakfast?lock=52',
+    ingredientes: ['yogur', 'platano', 'avena'],
+    basicos: ['miel'],
+    pasos: [
+      'Pon el yogur en un bol.',
+      'Añade el plátano en rodajas y la avena.',
+      'Termina con un poco de miel.'
+    ]
+  },
+  {
+    id: 'smoothie-platano',
+    nombre: 'Smoothie de plátano',
+    tiempo: 5,
+    dificultad: 'Fácil',
+    categoria: 'Desayuno',
+    imagen: 'https://loremflickr.com/800/600/banana,smoothie,breakfast?lock=53',
+    ingredientes: ['platano', 'leche', 'avena'],
+    basicos: ['miel'],
+    pasos: [
+      'Pon el plátano, la leche y la avena en la licuadora.',
+      'Tritura hasta que quede cremoso.',
+      'Endulza con miel si lo deseas.'
+    ]
+  },
+  {
+    id: 'huevos-fritos-desayuno',
+    nombre: 'Huevos fritos con pan',
+    tiempo: 8,
+    dificultad: 'Fácil',
+    categoria: 'Desayuno',
+    imagen: 'https://loremflickr.com/800/600/fried,eggs,bread,breakfast?lock=54',
+    ingredientes: ['huevo', 'pan'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Calienta aceite en la sartén.',
+      'Fríe los huevos hasta que la clara cuaje.',
+      'Sírvelos con pan tostado.'
     ]
   }
 ]
