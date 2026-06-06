@@ -9,19 +9,18 @@ export default function RecetaDetalle({ receta, onCerrar, esFavorita, toggleFavo
     setAñadido(true)
   }
 
+  // Búsqueda en YouTube del nombre de la receta. Se abre en YouTube (no se incrusta),
+  // así nunca hay embeds rotos ni cookies de Google dentro de la app.
+  const urlYouTube =
+    'https://www.youtube.com/results?search_query=' +
+    encodeURIComponent('receta ' + receta.nombre)
+
   return (
     <div className="modal-fondo" onClick={onCerrar}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="cerrar" onClick={onCerrar} aria-label="Cerrar">✕</button>
 
-        <div className="video">
-          <iframe
-            src={`https://www.youtube.com/embed/${receta.video}`}
-            title={receta.nombre}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <div className="modal-img" style={{ backgroundImage: `url(${receta.imagen})` }} />
 
         <div className="modal-body">
           <div className="modal-head">
@@ -34,6 +33,10 @@ export default function RecetaDetalle({ receta, onCerrar, esFavorita, toggleFavo
             <span>⏱ {receta.tiempo} min</span>
             <span>· {receta.dificultad}</span>
           </div>
+
+          <a className="btn-youtube" href={urlYouTube} target="_blank" rel="noopener noreferrer">
+            ▶ Ver video en YouTube
+          </a>
 
           <h4>Ingredientes</h4>
           <ul className="ingredientes">

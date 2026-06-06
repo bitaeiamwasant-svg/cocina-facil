@@ -1,8 +1,70 @@
 // Base de recetas del MVP. Más adelante esto puede venir de una API/backend.
 // `ingredientes` se usan para hacer el match con lo que el usuario tiene.
 // `basicos` son cosas que casi todos tienen (sal, aceite...) y no penalizan el match.
+// `video`: actualmente NO se usa (el detalle abre una búsqueda en YouTube por nombre).
+//   Se conserva por si más adelante se quiere fijar un video concreto verificado.
 
 export const recetas = [
+  {
+    id: 'salteado-papa-tomate-jamon',
+    nombre: 'Salteado de papa, tomate y jamón',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?auto=format&fit=crop&w=800&q=70',
+    video: 'Y_NeKZL30dM',
+    ingredientes: ['papa', 'tomate', 'jamon'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Corta la papa en cubos pequeños y dórala en aceite hasta que esté tierna.',
+      'Añade el tomate y el jamón en trozos y saltea 3 minutos.',
+      'Salpimienta y sirve caliente.'
+    ]
+  },
+  {
+    id: 'tortilla-papa-tomate',
+    nombre: 'Tortilla de papa y tomate',
+    tiempo: 20,
+    dificultad: 'Fácil',
+    imagen: 'https://images.unsplash.com/photo-1568158951683-b4d9a3a3f8d0?auto=format&fit=crop&w=800&q=70',
+    video: 'lZqLlMq2gv4',
+    ingredientes: ['papa', 'tomate', 'huevo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Fríe la papa en rodajas finas hasta que esté tierna.',
+      'Bate los huevos, añade el tomate troceado y mezcla con la papa.',
+      'Cuaja la tortilla en la sartén por ambos lados.'
+    ]
+  },
+  {
+    id: 'huevos-jamon',
+    nombre: 'Huevos con jamón',
+    tiempo: 8,
+    dificultad: 'Fácil',
+    imagen: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=70',
+    video: 'PUP7U5vTMM0',
+    ingredientes: ['huevo', 'jamon'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Calienta un poco de aceite en la sartén.',
+      'Añade el jamón en trozos y, encima, los huevos.',
+      'Cocina hasta que la clara cuaje y sirve.'
+    ]
+  },
+  {
+    id: 'pan-tomate-jamon',
+    nombre: 'Pan con tomate y jamón',
+    tiempo: 7,
+    dificultad: 'Fácil',
+    imagen: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=70',
+    video: 'Ja1AjVqL8sc',
+    ingredientes: ['pan', 'tomate', 'jamon'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Tuesta el pan.',
+      'Restriega el tomate maduro sobre el pan y añade un hilo de aceite y sal.',
+      'Cubre con el jamón y sirve.'
+    ]
+  },
   {
     id: 'huevos-revueltos',
     nombre: 'Huevos revueltos cremosos',

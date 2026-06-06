@@ -6,3 +6,6 @@ dev-dist
 
 # Documentos privados (no publicar en un repo público)
 src/private/
+
+# Configuración local de Claude Code
+.claude/

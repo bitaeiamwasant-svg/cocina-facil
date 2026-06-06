@@ -145,10 +145,20 @@ textarea:focus, input:focus { outline: none; border-color: var(--naranja); }
   background: rgba(0,0,0,0.5); color: #fff; border: none;
   width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 1rem;
 }
-.video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
-.video iframe { width: 100%; height: 100%; border: 0; display: block; }
+.modal-img {
+  width: 100%; aspect-ratio: 16 / 9; background-size: cover; background-position: center;
+  border-radius: 20px 20px 0 0;
+}
 .modal-body { padding: 18px; }
 .modal-head { display: flex; justify-content: space-between; align-items: center; }
+.btn-youtube {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #ff0000; color: #fff; text-decoration: none;
+  border-radius: 12px; padding: 11px 18px; font-weight: 600; font-size: 0.95rem;
+  margin-top: 14px; transition: background 0.2s, transform 0.1s;
+}
+.btn-youtube:hover { background: #d90000; }
+.btn-youtube:active { transform: scale(0.97); }
 .modal-body h4 { margin: 18px 0 8px; }
 .ingredientes { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 .ingredientes li { background: #fff; border: 1px solid #f0e0d4; padding: 6px 12px; border-radius: 20px; font-size: 0.9rem; }

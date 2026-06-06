@@ -1,11 +1,35 @@
-// Normaliza texto: minúsculas, sin acentos, sin plurales simples.
+// Sinónimos regionales -> término canónico que usan las recetas.
+// Así "papa" y "patata" (o "palta"/"aguacate") se tratan como el mismo ingrediente.
+const SINONIMOS = {
+  papa: 'patata',
+  palta: 'aguacate',
+  jitomate: 'tomate',
+  choclo: 'maiz',
+  elote: 'maiz',
+  arveja: 'guisante',
+  chicharo: 'guisante',
+  aji: 'pimiento',
+  morron: 'pimiento',
+  pimenton: 'pimiento',
+  banana: 'platano',
+  cambur: 'platano',
+  camote: 'boniato',
+  durazno: 'melocoton',
+  frutilla: 'fresa',
+  mani: 'cacahuete',
+  poroto: 'frijol',
+  habichuela: 'frijol'
+}
+
+// Normaliza texto: minúsculas, sin acentos, sin plural simple y unifica sinónimos.
 export function normaliza(txt) {
-  return txt
+  const base = txt
     .toLowerCase()
     .trim()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '') // quita acentos
     .replace(/s$/, '') // quita plural simple
+  return SINONIMOS[base] || base
 }
 
 // Convierte el texto del usuario ("huevos, leche y pan") en una lista limpia.
