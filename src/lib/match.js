@@ -56,7 +56,9 @@ const SINONIMOS = {
   vainita: 'judia',
   // Postres / desayunos
   yogurt: 'yogur',
-  yoghurt: 'yogur'
+  yoghurt: 'yogur',
+  // Categoría: "crema(s)" también encuentra las sopas (no hay ingrediente "crema")
+  crema: 'sopa'
 }
 
 // Normaliza texto: minúsculas, sin acentos, sin plural simple y unifica sinónimos.

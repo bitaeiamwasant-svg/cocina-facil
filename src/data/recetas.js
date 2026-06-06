@@ -146,6 +146,7 @@ export const recetas = [
     nombre: 'Sopa de verduras',
     tiempo: 30,
     dificultad: 'Fácil',
+    categoria: 'Sopa',
     imagen: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=70',
     video: 'l5R3E6jdHps',
     ingredientes: ['zanahoria', 'patata', 'cebolla', 'apio'],
@@ -222,6 +223,7 @@ export const recetas = [
     nombre: 'Crema de calabacín',
     tiempo: 30,
     dificultad: 'Fácil',
+    categoria: 'Sopa',
     imagen: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=70',
     video: 'eUQfZQbP5oA',
     ingredientes: ['calabacin', 'cebolla', 'patata', 'queso'],
@@ -619,6 +621,7 @@ export const recetas = [
     nombre: 'Sopa de mariscos',
     tiempo: 35,
     dificultad: 'Media',
+    categoria: 'Sopa',
     imagen: 'https://loremflickr.com/800/600/seafood,soup,food?lock=36',
     ingredientes: ['marisco', 'tomate', 'cebolla', 'ajo'],
     basicos: ['aceite', 'sal'],
@@ -888,6 +891,66 @@ export const recetas = [
       'Calienta aceite en la sartén.',
       'Fríe los huevos hasta que la clara cuaje.',
       'Sírvelos con pan tostado.'
+    ]
+  },
+  {
+    id: 'sopa-pollo',
+    nombre: 'Sopa de pollo',
+    tiempo: 40,
+    dificultad: 'Fácil',
+    categoria: 'Sopa',
+    imagen: 'https://loremflickr.com/800/600/chicken,soup,food?lock=55',
+    ingredientes: ['pollo', 'zanahoria', 'cebolla', 'apio'],
+    basicos: ['sal'],
+    pasos: [
+      'Cuece el pollo en agua con sal.',
+      'Añade la zanahoria, la cebolla y el apio en trozos.',
+      'Cocina 25 minutos y sirve caliente.'
+    ]
+  },
+  {
+    id: 'crema-tomate',
+    nombre: 'Crema de tomate',
+    tiempo: 25,
+    dificultad: 'Fácil',
+    categoria: 'Sopa',
+    imagen: 'https://loremflickr.com/800/600/tomato,soup,food?lock=56',
+    ingredientes: ['tomate', 'cebolla', 'leche'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Sofríe la cebolla y añade el tomate troceado.',
+      'Cocina 10 minutos y tritura.',
+      'Añade un chorro de leche y calienta sin que hierva.'
+    ]
+  },
+  {
+    id: 'crema-brocoli',
+    nombre: 'Crema de brócoli',
+    tiempo: 30,
+    dificultad: 'Fácil',
+    categoria: 'Sopa',
+    imagen: 'https://loremflickr.com/800/600/broccoli,soup,food?lock=57',
+    ingredientes: ['brocoli', 'patata', 'cebolla'],
+    basicos: ['sal', 'aceite'],
+    pasos: [
+      'Sofríe la cebolla y añade el brócoli y la patata.',
+      'Cubre con agua y cocina 20 minutos.',
+      'Tritura hasta obtener una crema suave.'
+    ]
+  },
+  {
+    id: 'sopa-fideos',
+    nombre: 'Sopa de fideos',
+    tiempo: 20,
+    dificultad: 'Fácil',
+    categoria: 'Sopa',
+    imagen: 'https://loremflickr.com/800/600/noodle,soup,food?lock=58',
+    ingredientes: ['pasta', 'zanahoria', 'cebolla'],
+    basicos: ['sal'],
+    pasos: [
+      'Sofríe la cebolla y la zanahoria.',
+      'Añade agua o caldo y lleva a ebullición.',
+      'Incorpora los fideos y cocina hasta que estén tiernos.'
     ]
   }
 ]
