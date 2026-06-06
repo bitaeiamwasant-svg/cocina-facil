@@ -25,7 +25,7 @@ export const recetas = [
     nombre: 'Tortilla de papa y tomate',
     tiempo: 20,
     dificultad: 'Fácil',
-    imagen: 'https://images.unsplash.com/photo-1568158951683-b4d9a3a3f8d0?auto=format&fit=crop&w=800&q=70',
+    imagen: 'https://loremflickr.com/800/600/spanish,omelette,food?lock=24',
     video: 'lZqLlMq2gv4',
     ingredientes: ['papa', 'tomate', 'huevo'],
     basicos: ['aceite', 'sal'],
@@ -130,7 +130,7 @@ export const recetas = [
     nombre: 'Tortilla de patata',
     tiempo: 35,
     dificultad: 'Media',
-    imagen: 'https://images.unsplash.com/photo-1568158951683-b4d9a3a3f8d0?auto=format&fit=crop&w=800&q=70',
+    imagen: 'https://loremflickr.com/800/600/spanish,omelette,food?lock=24',
     video: 'lZqLlMq2gv4',
     ingredientes: ['patata', 'huevo', 'cebolla'],
     basicos: ['aceite', 'sal'],
@@ -273,6 +273,188 @@ export const recetas = [
       'Calienta la leche con la avena removiendo unos 5 minutos.',
       'Añade el plátano en rodajas.',
       'Termina con un poco de canela y miel.'
+    ]
+  },
+  {
+    id: 'pescado-al-horno',
+    nombre: 'Pescado al horno con limón',
+    tiempo: 30,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/baked,fish,food?lock=11',
+    ingredientes: ['pescado', 'limon'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Coloca el pescado en una bandeja con rodajas de limón.',
+      'Riega con aceite, sal y pimienta.',
+      'Hornea a 200°C unos 18-20 minutos.'
+    ]
+  },
+  {
+    id: 'pescado-plancha',
+    nombre: 'Pescado a la plancha',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/grilled,fish,food?lock=12',
+    ingredientes: ['pescado', 'ajo'],
+    basicos: ['aceite', 'sal', 'limon'],
+    pasos: [
+      'Salpimienta el pescado y dóralo en la sartén con aceite y ajo.',
+      'Cocina 3-4 minutos por cada lado.',
+      'Sirve con un chorro de limón.'
+    ]
+  },
+  {
+    id: 'tacos-pescado',
+    nombre: 'Tacos de pescado',
+    tiempo: 25,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/fish,tacos,food?lock=13',
+    ingredientes: ['pescado', 'tortilla', 'cebolla', 'limon'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Corta el pescado en tiras y dóralo en la sartén.',
+      'Calienta las tortillas.',
+      'Rellena con el pescado, cebolla y un toque de limón.'
+    ]
+  },
+  {
+    id: 'ensalada-atun',
+    nombre: 'Ensalada de atún',
+    tiempo: 10,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/tuna,salad,food?lock=14',
+    ingredientes: ['atun', 'lechuga', 'tomate', 'cebolla'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Trocea la lechuga, el tomate y la cebolla.',
+      'Añade el atún escurrido.',
+      'Aliña con aceite y sal.'
+    ]
+  },
+  {
+    id: 'pasta-atun',
+    nombre: 'Pasta con atún y tomate',
+    tiempo: 20,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/pasta,tuna,food?lock=15',
+    ingredientes: ['pasta', 'atun', 'tomate'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Hierve la pasta en agua con sal.',
+      'Calienta el tomate triturado con el atún.',
+      'Mezcla la salsa con la pasta escurrida.'
+    ]
+  },
+  {
+    id: 'chuletas-cerdo',
+    nombre: 'Chuletas de cerdo a la plancha',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/grilled,pork,chop,food?lock=16',
+    ingredientes: ['cerdo', 'ajo'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Adoba las chuletas con ajo, sal y pimienta.',
+      'Calienta bien la sartén con un poco de aceite.',
+      'Dora las chuletas 3-4 minutos por cada lado.'
+    ]
+  },
+  {
+    id: 'cerdo-agridulce',
+    nombre: 'Cerdo agridulce',
+    tiempo: 30,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/sweet,sour,pork,food?lock=17',
+    ingredientes: ['cerdo', 'pimiento', 'cebolla'],
+    basicos: ['aceite', 'sal', 'salsa de soja'],
+    pasos: [
+      'Dora el cerdo en trozos y aparta.',
+      'Saltea el pimiento y la cebolla.',
+      'Une todo con un poco de salsa de soja y cocina 5 minutos.'
+    ]
+  },
+  {
+    id: 'lomo-cerdo-horno',
+    nombre: 'Lomo de cerdo al horno con papas',
+    tiempo: 50,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/roast,pork,potato,food?lock=18',
+    ingredientes: ['cerdo', 'patata', 'ajo'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Adoba el cerdo con ajo, aceite, sal y pimienta.',
+      'Acomoda con las papas en una bandeja.',
+      'Hornea a 200°C unos 40 minutos.'
+    ]
+  },
+  {
+    id: 'bistec-plancha',
+    nombre: 'Bistec a la plancha',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/grilled,beef,steak,food?lock=19',
+    ingredientes: ['carne', 'ajo'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Salpimienta la carne.',
+      'Calienta bien la sartén con aceite y ajo.',
+      'Sella la carne al punto que prefieras.'
+    ]
+  },
+  {
+    id: 'bolonesa',
+    nombre: 'Pasta boloñesa rápida',
+    tiempo: 30,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/bolognese,pasta,food?lock=20',
+    ingredientes: ['pasta', 'carne', 'tomate', 'cebolla'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Sofríe la cebolla y añade la carne picada.',
+      'Incorpora el tomate triturado y cocina 15 minutos.',
+      'Sirve sobre la pasta hervida.'
+    ]
+  },
+  {
+    id: 'albondigas',
+    nombre: 'Albóndigas en salsa de tomate',
+    tiempo: 40,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/meatballs,tomato,food?lock=21',
+    ingredientes: ['carne', 'huevo', 'pan', 'tomate', 'cebolla'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Mezcla la carne con huevo y pan rallado y forma bolitas.',
+      'Dóralas en la sartén.',
+      'Cocínalas en salsa de tomate con cebolla 15 minutos.'
+    ]
+  },
+  {
+    id: 'lentejas',
+    nombre: 'Lentejas guisadas',
+    tiempo: 40,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/lentil,stew,food?lock=22',
+    ingredientes: ['lenteja', 'zanahoria', 'cebolla', 'patata'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Sofríe la cebolla, la zanahoria y la patata en trozos.',
+      'Añade las lentejas y cubre con agua.',
+      'Cocina a fuego medio unos 30 minutos.'
+    ]
+  },
+  {
+    id: 'garbanzos-espinaca',
+    nombre: 'Garbanzos con espinaca',
+    tiempo: 25,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/chickpeas,spinach,food?lock=23',
+    ingredientes: ['garbanzo', 'espinaca', 'ajo'],
+    basicos: ['aceite', 'sal', 'pimenton'],
+    pasos: [
+      'Dora el ajo en aceite.',
+      'Añade la espinaca hasta que reduzca.',
+      'Incorpora los garbanzos cocidos y cocina 5 minutos.'
     ]
   }
 ]

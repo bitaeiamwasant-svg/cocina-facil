@@ -18,17 +18,31 @@ const SINONIMOS = {
   frutilla: 'fresa',
   mani: 'cacahuete',
   poroto: 'frijol',
-  habichuela: 'frijol'
+  habichuela: 'frijol',
+  // Carnes y pescados
+  chuleta: 'cerdo',
+  chancho: 'cerdo',
+  puerco: 'cerdo',
+  res: 'carne',
+  ternera: 'carne',
+  bistec: 'carne',
+  bife: 'carne',
+  merluza: 'pescado',
+  tilapia: 'pescado',
+  bacalao: 'pescado'
 }
 
 // Normaliza texto: minúsculas, sin acentos, sin plural simple y unifica sinónimos.
 export function normaliza(txt) {
-  const base = txt
+  const limpio = txt
     .toLowerCase()
     .trim()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '') // quita acentos
-    .replace(/s$/, '') // quita plural simple
+  // Sinónimo directo primero, para no romper palabras singulares que acaban en "s"
+  // (p. ej. "res" -> "carne"). Si no hay, quitamos el plural y reintentamos.
+  if (SINONIMOS[limpio]) return SINONIMOS[limpio]
+  const base = limpio.replace(/s$/, '') // quita plural simple
   return SINONIMOS[base] || base
 }
 
