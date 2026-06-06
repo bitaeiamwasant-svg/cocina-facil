@@ -16,11 +16,19 @@ export default function Buscar({ recetas, onAbrir, esFavorita, toggleFavorita })
   const [maxTiempo, setMaxTiempo] = useLocalStorage('cf:filtroTiempo', 0)
   const [dificultad, setDificultad] = useLocalStorage('cf:filtroDificultad', 'Todas')
 
+  const hayIngredientes = parseIngredientes(texto).length > 0
+
   const encontradas = useMemo(() => {
     const ingredientes = parseIngredientes(texto)
     if (ingredientes.length === 0) return []
     return buscarRecetas(recetas, ingredientes)
   }, [texto, recetas])
+
+  // Recetas fáciles para mostrar al entrar, cuando aún no se ha escrito nada.
+  const destacadas = useMemo(
+    () => recetas.filter((r) => r.dificultad === 'Fácil').slice(0, 6),
+    [recetas]
+  )
 
   const hayFiltros = maxTiempo !== 0 || dificultad !== 'Todas'
   const limpiarFiltros = () => {
@@ -99,7 +107,7 @@ export default function Buscar({ recetas, onAbrir, esFavorita, toggleFavorita })
         </p>
       )}
 
-      {buscado && encontradas.length === 0 && (
+      {buscado && hayIngredientes && encontradas.length === 0 && (
         <p className="vacio">No encontramos recetas con esos ingredientes. ¡Prueba con otros!</p>
       )}
 
@@ -119,6 +127,24 @@ export default function Buscar({ recetas, onAbrir, esFavorita, toggleFavorita })
           />
         ))}
       </div>
+
+      {!hayIngredientes && (
+        <div className="destacadas">
+          <h3 className="titulo-seccion">🍳 Recetas fáciles para empezar</h3>
+          <p className="ayuda">Toca una para verla, o escribe arriba lo que tienes.</p>
+          <div className="grid">
+            {destacadas.map((receta) => (
+              <RecetaCard
+                key={receta.id}
+                receta={receta}
+                onAbrir={onAbrir}
+                esFavorita={esFavorita(receta.id)}
+                toggleFavorita={() => toggleFavorita(receta.id)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   )
 }

@@ -51,6 +51,7 @@ body {
 .ayuda { color: var(--gris); margin-bottom: 14px; font-size: 0.9rem; }
 .vacio { color: var(--gris); text-align: center; padding: 30px 10px; }
 .contador { color: var(--gris); font-size: 0.9rem; font-weight: 600; margin-bottom: 12px; }
+.destacadas { margin-top: 8px; }
 
 /* ---- Buscador ---- */
 .buscador { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
