@@ -29,7 +29,21 @@ const SINONIMOS = {
   bife: 'carne',
   merluza: 'pescado',
   tilapia: 'pescado',
-  bacalao: 'pescado'
+  bacalao: 'pescado',
+  // Hongos (champiñón -> "champinon"/"champinone" tras quitar acentos/plural)
+  champinon: 'hongo',
+  champinone: 'hongo',
+  seta: 'hongo',
+  callampa: 'hongo',
+  // Tipos de queso -> queso
+  mozzarella: 'queso',
+  mozarella: 'queso',
+  parmesano: 'queso',
+  cheddar: 'queso',
+  gouda: 'queso',
+  manchego: 'queso',
+  ricotta: 'queso',
+  feta: 'queso'
 }
 
 // Normaliza texto: minúsculas, sin acentos, sin plural simple y unifica sinónimos.

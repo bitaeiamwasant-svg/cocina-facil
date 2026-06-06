@@ -456,5 +456,117 @@ export const recetas = [
       'Añade la espinaca hasta que reduzca.',
       'Incorpora los garbanzos cocidos y cocina 5 minutos.'
     ]
+  },
+  {
+    id: 'champinones-ajillo',
+    nombre: 'Champiñones al ajillo',
+    tiempo: 12,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/garlic,mushrooms,food?lock=25',
+    ingredientes: ['hongo', 'ajo'],
+    basicos: ['aceite', 'sal', 'perejil'],
+    pasos: [
+      'Lamina los champiñones y dora el ajo en aceite.',
+      'Añade los champiñones y saltea a fuego fuerte 6-7 minutos.',
+      'Salpimienta y termina con perejil picado.'
+    ]
+  },
+  {
+    id: 'revuelto-hongos',
+    nombre: 'Revuelto de huevo y champiñones',
+    tiempo: 10,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/mushroom,scrambled,eggs,food?lock=26',
+    ingredientes: ['hongo', 'huevo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Saltea los champiñones laminados con un poco de aceite.',
+      'Añade los huevos batidos.',
+      'Remueve a fuego suave hasta que cuajen.'
+    ]
+  },
+  {
+    id: 'pasta-hongos',
+    nombre: 'Pasta con champiñones',
+    tiempo: 20,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/mushroom,pasta,food?lock=27',
+    ingredientes: ['pasta', 'hongo', 'ajo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Hierve la pasta en agua con sal.',
+      'Dora el ajo y los champiñones en aceite.',
+      'Mezcla la pasta con los champiñones salteados.'
+    ]
+  },
+  {
+    id: 'pollo-hongos',
+    nombre: 'Pollo con champiñones',
+    tiempo: 30,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/chicken,mushroom,food?lock=28',
+    ingredientes: ['pollo', 'hongo', 'cebolla'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Dora el pollo en trozos y aparta.',
+      'Saltea la cebolla y los champiñones.',
+      'Une todo y cocina 10 minutos hasta que el pollo esté hecho.'
+    ]
+  },
+  {
+    id: 'macarrones-queso',
+    nombre: 'Macarrones con queso',
+    tiempo: 25,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/mac,cheese,food?lock=29',
+    ingredientes: ['pasta', 'queso', 'leche'],
+    basicos: ['mantequilla', 'sal'],
+    pasos: [
+      'Hierve los macarrones en agua con sal.',
+      'Derrite mantequilla, añade la leche y el queso hasta formar una crema.',
+      'Mezcla la salsa con la pasta y sirve caliente.'
+    ]
+  },
+  {
+    id: 'tortilla-queso',
+    nombre: 'Tortilla de queso',
+    tiempo: 10,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/cheese,omelette,food?lock=30',
+    ingredientes: ['huevo', 'queso'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Bate los huevos con una pizca de sal.',
+      'Cuájalos en la sartén y añade el queso por encima.',
+      'Dobla la tortilla cuando el queso empiece a fundirse.'
+    ]
+  },
+  {
+    id: 'papas-gratinadas',
+    nombre: 'Papas gratinadas con queso',
+    tiempo: 40,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/cheese,potato,gratin,food?lock=31',
+    ingredientes: ['patata', 'queso', 'leche'],
+    basicos: ['mantequilla', 'sal', 'pimienta'],
+    pasos: [
+      'Corta las papas en rodajas finas y colócalas en una fuente.',
+      'Cubre con leche, sal, pimienta y abundante queso.',
+      'Hornea a 200°C unos 30 minutos hasta gratinar.'
+    ]
+  },
+  {
+    id: 'pan-queso-fundido',
+    nombre: 'Pan con queso fundido',
+    tiempo: 8,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/melted,cheese,bread,food?lock=32',
+    ingredientes: ['pan', 'queso'],
+    basicos: ['mantequilla'],
+    pasos: [
+      'Unta el pan con un poco de mantequilla.',
+      'Cubre con queso en lonchas.',
+      'Tuesta o gratina hasta que el queso se funda.'
+    ]
   }
 ]
