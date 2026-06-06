@@ -568,5 +568,173 @@ export const recetas = [
       'Cubre con queso en lonchas.',
       'Tuesta o gratina hasta que el queso se funda.'
     ]
+  },
+  {
+    id: 'camarones-ajillo',
+    nombre: 'Camarones al ajillo',
+    tiempo: 12,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/garlic,shrimp,food?lock=33',
+    ingredientes: ['camaron', 'ajo'],
+    basicos: ['aceite', 'sal', 'perejil'],
+    pasos: [
+      'Dora el ajo laminado en aceite.',
+      'Añade los camarones y saltea 3-4 minutos.',
+      'Salpimienta y termina con perejil.'
+    ]
+  },
+  {
+    id: 'calamares-plancha',
+    nombre: 'Calamares a la plancha',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/grilled,squid,food?lock=34',
+    ingredientes: ['calamar', 'ajo', 'limon'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Limpia los calamares y sécalos bien.',
+      'Hazlos a la plancha fuerte 2-3 minutos por lado.',
+      'Aliña con ajo, limón, aceite y sal.'
+    ]
+  },
+  {
+    id: 'arroz-mariscos',
+    nombre: 'Arroz con mariscos',
+    tiempo: 40,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/seafood,rice,food?lock=35',
+    ingredientes: ['arroz', 'marisco', 'cebolla', 'pimiento'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Sofríe la cebolla y el pimiento.',
+      'Añade el arroz y los mariscos.',
+      'Cubre con caldo y cocina hasta que el arroz esté listo.'
+    ]
+  },
+  {
+    id: 'sopa-mariscos',
+    nombre: 'Sopa de mariscos',
+    tiempo: 35,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/seafood,soup,food?lock=36',
+    ingredientes: ['marisco', 'tomate', 'cebolla', 'ajo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Sofríe la cebolla, el ajo y el tomate.',
+      'Añade agua o caldo y lleva a ebullición.',
+      'Incorpora los mariscos y cocina 8-10 minutos.'
+    ]
+  },
+  {
+    id: 'mejillones-vapor',
+    nombre: 'Mejillones al vapor',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/steamed,mussels,food?lock=37',
+    ingredientes: ['mejillon', 'limon'],
+    basicos: ['sal', 'perejil'],
+    pasos: [
+      'Limpia bien los mejillones.',
+      'Ponlos en una olla con un poco de agua y limón, tapa.',
+      'Cocina al vapor hasta que se abran y añade perejil.'
+    ]
+  },
+  {
+    id: 'salteado-verduras',
+    nombre: 'Salteado de verduras',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/stir,fry,vegetables,food?lock=38',
+    ingredientes: ['verdura', 'ajo'],
+    basicos: ['aceite', 'sal', 'salsa de soja'],
+    pasos: [
+      'Corta las verduras que tengas en trozos pequeños.',
+      'Saltéalas a fuego fuerte con ajo y aceite.',
+      'Termina con un chorro de salsa de soja.'
+    ]
+  },
+  {
+    id: 'verduras-horno',
+    nombre: 'Verduras al horno',
+    tiempo: 35,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/roasted,vegetables,food?lock=39',
+    ingredientes: ['verdura', 'patata'],
+    basicos: ['aceite', 'sal', 'pimienta'],
+    pasos: [
+      'Trocea las verduras y la papa.',
+      'Colócalas en una bandeja con aceite, sal y pimienta.',
+      'Hornea a 200°C unos 25-30 minutos.'
+    ]
+  },
+  {
+    id: 'brocoli-ajo',
+    nombre: 'Brócoli salteado con ajo',
+    tiempo: 12,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/broccoli,garlic,food?lock=40',
+    ingredientes: ['brocoli', 'ajo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Cuece el brócoli al vapor unos 5 minutos.',
+      'Dora el ajo en aceite.',
+      'Saltea el brócoli con el ajo 3 minutos.'
+    ]
+  },
+  {
+    id: 'berenjenas-horno',
+    nombre: 'Berenjenas al horno con queso',
+    tiempo: 35,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/baked,eggplant,cheese,food?lock=41',
+    ingredientes: ['berenjena', 'tomate', 'queso'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Corta la berenjena en rodajas y ásala un poco.',
+      'Cúbrela con tomate y queso.',
+      'Hornea a 200°C hasta gratinar.'
+    ]
+  },
+  {
+    id: 'coliflor-gratinada',
+    nombre: 'Coliflor gratinada',
+    tiempo: 30,
+    dificultad: 'Media',
+    imagen: 'https://loremflickr.com/800/600/cauliflower,gratin,food?lock=42',
+    ingredientes: ['coliflor', 'queso', 'leche'],
+    basicos: ['mantequilla', 'sal'],
+    pasos: [
+      'Cuece la coliflor hasta que esté tierna.',
+      'Cúbrela con una salsa de leche y queso.',
+      'Gratina en el horno 10 minutos.'
+    ]
+  },
+  {
+    id: 'ensalada-pepino',
+    nombre: 'Ensalada de pepino',
+    tiempo: 8,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/cucumber,salad,food?lock=43',
+    ingredientes: ['pepino', 'tomate', 'cebolla'],
+    basicos: ['aceite', 'sal', 'vinagre'],
+    pasos: [
+      'Corta el pepino, el tomate y la cebolla.',
+      'Mézclalos en un bol.',
+      'Aliña con aceite, sal y vinagre.'
+    ]
+  },
+  {
+    id: 'judias-salteadas',
+    nombre: 'Judías verdes salteadas con ajo',
+    tiempo: 15,
+    dificultad: 'Fácil',
+    imagen: 'https://loremflickr.com/800/600/green,beans,garlic,food?lock=44',
+    ingredientes: ['judia', 'ajo'],
+    basicos: ['aceite', 'sal'],
+    pasos: [
+      'Cuece las judías verdes en agua con sal hasta que estén tiernas.',
+      'Dora el ajo laminado en aceite.',
+      'Saltea las judías con el ajo 3-4 minutos.'
+    ]
   }
 ]
